@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="LYQAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5l-FO-jKK">
+                        <rect key="frame" x="0.0" y="0.0" width="386" height="1"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Umf-rP-GCr"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dibiao" translatesAutoresizingMaskIntoConstraints="NO" id="SZa-2J-uHO">
+                        <rect key="frame" x="15" y="36.5" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="GEJ-O7-KEE"/>
+                            <constraint firstAttribute="height" constant="15" id="Sc7-hC-3mv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omj-nP-jtb">
+                        <rect key="frame" x="44" y="21" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.058823529411764705" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebi-KX-UW9">
+                        <rect key="frame" x="44" y="56" width="26.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SZa-2J-uHO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Hg-NB-QhK"/>
+                    <constraint firstAttribute="trailing" secondItem="L5l-FO-jKK" secondAttribute="trailing" id="8Hz-ln-Y4c"/>
+                    <constraint firstItem="ebi-KX-UW9" firstAttribute="top" secondItem="omj-nP-jtb" secondAttribute="bottom" constant="20" id="9zo-AD-P1h"/>
+                    <constraint firstItem="L5l-FO-jKK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Saf-xp-yeF"/>
+                    <constraint firstItem="L5l-FO-jKK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UGs-0l-0tm"/>
+                    <constraint firstItem="omj-nP-jtb" firstAttribute="leading" secondItem="SZa-2J-uHO" secondAttribute="trailing" constant="19" id="iD0-8o-Jg4"/>
+                    <constraint firstItem="SZa-2J-uHO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="o8x-Gu-ARM"/>
+                    <constraint firstItem="ebi-KX-UW9" firstAttribute="leading" secondItem="omj-nP-jtb" secondAttribute="leading" id="umd-ih-5VB"/>
+                    <constraint firstItem="omj-nP-jtb" firstAttribute="top" secondItem="L5l-FO-jKK" secondAttribute="bottom" constant="20" id="wHK-n8-MTK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="diteLabel" destination="ebi-KX-UW9" id="moo-Hc-zn1"/>
+                <outlet property="nameStrLabel" destination="omj-nP-jtb" id="7Ul-VX-Wjt"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="124"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dibiao" width="9" height="14"/>
+    </resources>
+</document>

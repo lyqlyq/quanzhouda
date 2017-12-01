@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doG-c5-MPv">
+                    <rect key="frame" x="32" y="55" width="330" height="1"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jfa-iH-aHy"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cong" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-tO-hWl">
+                    <rect key="frame" x="15" y="16" width="21" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="Qh6-kr-jDD"/>
+                        <constraint firstAttribute="height" constant="25" id="adP-4L-8cB"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dao" translatesAutoresizingMaskIntoConstraints="NO" id="vt8-Jw-jDz">
+                    <rect key="frame" x="15" y="65" width="21" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0b7-pU-VMg"/>
+                        <constraint firstAttribute="width" constant="21" id="Vw0-Uv-QGH"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dian" translatesAutoresizingMaskIntoConstraints="NO" id="SgI-nc-UOt">
+                    <rect key="frame" x="24.5" y="49" width="2" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="WSX-uc-bGJ"/>
+                        <constraint firstAttribute="width" constant="2" id="zmJ-5h-9Y9"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="成都市天府三街" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOY-Um-zaV">
+                    <rect key="frame" x="51" y="21" width="311" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="M3u-np-AfH"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="成都市天府三街" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-3j-UIV">
+                    <rect key="frame" x="51" y="69" width="311" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="NYl-va-fGU"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ehc-3j-UIV" firstAttribute="top" secondItem="doG-c5-MPv" secondAttribute="bottom" constant="13" id="5uN-cD-zbb"/>
+                <constraint firstItem="uOY-Um-zaV" firstAttribute="leading" secondItem="WKp-tO-hWl" secondAttribute="trailing" constant="15" id="7cf-Ll-o3E"/>
+                <constraint firstItem="WKp-tO-hWl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Jsy-Kr-MzO"/>
+                <constraint firstItem="ehc-3j-UIV" firstAttribute="trailing" secondItem="uOY-Um-zaV" secondAttribute="trailing" id="Lkh-e9-Z0k"/>
+                <constraint firstItem="uOY-Um-zaV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="PCT-UM-GiI"/>
+                <constraint firstItem="vt8-Jw-jDz" firstAttribute="centerX" secondItem="WKp-tO-hWl" secondAttribute="centerX" id="aIg-mU-REm"/>
+                <constraint firstItem="doG-c5-MPv" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="bY4-UD-V1f"/>
+                <constraint firstItem="ehc-3j-UIV" firstAttribute="leading" secondItem="uOY-Um-zaV" secondAttribute="leading" id="cV4-9A-Jqs"/>
+                <constraint firstAttribute="trailing" secondItem="doG-c5-MPv" secondAttribute="trailing" id="hNt-XJ-Qa2"/>
+                <constraint firstItem="SgI-nc-UOt" firstAttribute="centerX" secondItem="WKp-tO-hWl" secondAttribute="centerX" id="jfi-5J-YSm"/>
+                <constraint firstItem="WKp-tO-hWl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="lck-14-6sC"/>
+                <constraint firstItem="vt8-Jw-jDz" firstAttribute="leading" secondItem="WKp-tO-hWl" secondAttribute="leading" id="nvJ-7t-SyQ"/>
+                <constraint firstItem="doG-c5-MPv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="q7L-5a-D0z"/>
+                <constraint firstItem="SgI-nc-UOt" firstAttribute="top" secondItem="WKp-tO-hWl" secondAttribute="bottom" constant="8" id="s6Y-Wv-gnb"/>
+                <constraint firstItem="vt8-Jw-jDz" firstAttribute="top" secondItem="doG-c5-MPv" secondAttribute="bottom" constant="9" id="vTN-sD-OUb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uOY-Um-zaV" secondAttribute="trailing" id="zos-WJ-Y4Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-159" y="-211"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cong" width="21" height="25"/>
+        <image name="dao" width="21" height="25"/>
+        <image name="dian" width="2" height="12"/>
+    </resources>
+</document>

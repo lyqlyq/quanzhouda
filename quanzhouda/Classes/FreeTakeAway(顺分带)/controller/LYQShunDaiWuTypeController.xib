@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LYQShunDaiWuTypeController">
+            <connections>
+                <outlet property="eigt" destination="NzY-Om-VSB" id="QIR-A7-x7h"/>
+                <outlet property="fif" destination="BoN-qT-J5g" id="f5C-Dk-tGR"/>
+                <outlet property="foru" destination="iX4-eA-ag0" id="4No-oU-Vss"/>
+                <outlet property="nin" destination="iLR-BM-UOs" id="WGi-lw-8H9"/>
+                <outlet property="one" destination="tsT-qd-Rve" id="TxG-72-hEi"/>
+                <outlet property="seven" destination="VYF-5N-I8k" id="vLs-RD-7xu"/>
+                <outlet property="six" destination="VGs-ka-VtG" id="M9d-to-9yD"/>
+                <outlet property="sure" destination="VDX-cZ-Kmg" id="UTE-sz-Gy6"/>
+                <outlet property="there" destination="Sca-M7-VEQ" id="sCh-oM-mav"/>
+                <outlet property="two" destination="0nu-Co-Jir" id="M0W-9w-lag"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择物品类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5g-kl-fdw">
+                    <rect key="frame" x="15" y="15" width="100" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dP-O0-SW9">
+                    <rect key="frame" x="0.0" y="32" width="375" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-qd-Rve">
+                            <rect key="frame" x="15" y="15" width="81" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="文件" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title="文件" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="bx0-mL-IMI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nu-Co-Jir">
+                            <rect key="frame" x="105" y="14" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="证件" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Owy-Py-9tp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-M7-VEQ">
+                            <rect key="frame" x="195" y="14" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="食品" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="XZL-6Q-lcZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX4-eA-ag0">
+                            <rect key="frame" x="285" y="14" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="蛋糕" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="L8A-gR-mfo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoN-qT-J5g">
+                            <rect key="frame" x="15" y="74" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="生活用品" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="HaH-c0-Em5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-ka-VtG">
+                            <rect key="frame" x="105" y="74" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="手机" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="V1B-eE-CYs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYF-5N-I8k">
+                            <rect key="frame" x="194" y="74" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="电脑" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="VWR-N5-bDp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLR-BM-UOs">
+                            <rect key="frame" x="15" y="133" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="其他" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="YZ9-xP-Leh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzY-Om-VSB">
+                            <rect key="frame" x="285" y="74" width="81" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="鲜花" backgroundImage="weixuanzhong">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="xuanzhong">
+                                <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="aF1-Yn-60z"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="2Wv-w8-75o"/>
+                        <constraint firstItem="iLR-BM-UOs" firstAttribute="top" secondItem="BoN-qT-J5g" secondAttribute="bottom" constant="15" id="37F-M6-a47"/>
+                        <constraint firstItem="VYF-5N-I8k" firstAttribute="top" secondItem="VGs-ka-VtG" secondAttribute="top" id="601-my-3f2"/>
+                        <constraint firstItem="Sca-M7-VEQ" firstAttribute="leading" secondItem="0nu-Co-Jir" secondAttribute="trailing" constant="9" id="8N7-GU-RXg"/>
+                        <constraint firstItem="iX4-eA-ag0" firstAttribute="top" secondItem="6dP-O0-SW9" secondAttribute="top" constant="14" id="AmJ-CN-bFr"/>
+                        <constraint firstItem="tsT-qd-Rve" firstAttribute="top" secondItem="6dP-O0-SW9" secondAttribute="top" constant="15" id="Hwl-ys-yW5"/>
+                        <constraint firstItem="BoN-qT-J5g" firstAttribute="top" secondItem="tsT-qd-Rve" secondAttribute="bottom" constant="15" id="J4H-bt-kBN"/>
+                        <constraint firstItem="NzY-Om-VSB" firstAttribute="leading" secondItem="VYF-5N-I8k" secondAttribute="trailing" constant="9" id="JvB-AK-RL7"/>
+                        <constraint firstItem="0nu-Co-Jir" firstAttribute="leading" secondItem="tsT-qd-Rve" secondAttribute="trailing" constant="9" id="Lba-rb-2qg"/>
+                        <constraint firstItem="VGs-ka-VtG" firstAttribute="width" secondItem="BoN-qT-J5g" secondAttribute="width" id="NMp-mN-jbx"/>
+                        <constraint firstItem="NzY-Om-VSB" firstAttribute="top" secondItem="VYF-5N-I8k" secondAttribute="top" id="OOc-7w-kaO"/>
+                        <constraint firstItem="VGs-ka-VtG" firstAttribute="top" secondItem="BoN-qT-J5g" secondAttribute="top" id="P9D-lJ-HBd"/>
+                        <constraint firstItem="iLR-BM-UOs" firstAttribute="leading" secondItem="BoN-qT-J5g" secondAttribute="leading" id="QE9-mh-6dO"/>
+                        <constraint firstItem="iX4-eA-ag0" firstAttribute="width" secondItem="tsT-qd-Rve" secondAttribute="width" id="QaU-xP-msw"/>
+                        <constraint firstItem="0nu-Co-Jir" firstAttribute="width" secondItem="tsT-qd-Rve" secondAttribute="width" id="SIk-0l-mWH"/>
+                        <constraint firstItem="VGs-ka-VtG" firstAttribute="leading" secondItem="BoN-qT-J5g" secondAttribute="trailing" constant="9" id="Ubi-qB-SKq"/>
+                        <constraint firstItem="VYF-5N-I8k" firstAttribute="leading" secondItem="VGs-ka-VtG" secondAttribute="trailing" constant="9" id="bJD-wH-ELf"/>
+                        <constraint firstItem="BoN-qT-J5g" firstAttribute="leading" secondItem="tsT-qd-Rve" secondAttribute="leading" id="bvG-TM-79K"/>
+                        <constraint firstItem="Sca-M7-VEQ" firstAttribute="top" secondItem="6dP-O0-SW9" secondAttribute="top" constant="14" id="cYw-km-JZT"/>
+                        <constraint firstItem="iX4-eA-ag0" firstAttribute="leading" secondItem="Sca-M7-VEQ" secondAttribute="trailing" constant="9" id="dYI-Uj-rox"/>
+                        <constraint firstItem="Sca-M7-VEQ" firstAttribute="width" secondItem="tsT-qd-Rve" secondAttribute="width" id="h1g-Nq-VI3"/>
+                        <constraint firstItem="NzY-Om-VSB" firstAttribute="trailing" secondItem="iX4-eA-ag0" secondAttribute="trailing" id="iET-II-jpB"/>
+                        <constraint firstAttribute="trailing" secondItem="iX4-eA-ag0" secondAttribute="trailing" constant="9" id="iyJ-qj-MJe"/>
+                        <constraint firstItem="NzY-Om-VSB" firstAttribute="width" secondItem="BoN-qT-J5g" secondAttribute="width" id="kd8-PI-kZ0"/>
+                        <constraint firstItem="tsT-qd-Rve" firstAttribute="leading" secondItem="6dP-O0-SW9" secondAttribute="leading" constant="15" id="lqb-bb-8SA"/>
+                        <constraint firstItem="VYF-5N-I8k" firstAttribute="width" secondItem="BoN-qT-J5g" secondAttribute="width" id="pBw-zm-BlY"/>
+                        <constraint firstItem="iLR-BM-UOs" firstAttribute="width" secondItem="BoN-qT-J5g" secondAttribute="width" id="pIX-SD-HWW"/>
+                        <constraint firstItem="0nu-Co-Jir" firstAttribute="top" secondItem="6dP-O0-SW9" secondAttribute="top" constant="14" id="qOu-TW-EuD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDX-cZ-Kmg">
+                    <rect key="frame" x="20" y="282" width="335" height="41"/>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="nla-7W-4Kr"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="sureClick:" destination="-1" eventType="touchUpInside" id="2mK-kd-oqa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6dP-O0-SW9" firstAttribute="top" secondItem="M5g-kl-fdw" secondAttribute="bottom" id="0uy-D0-Kgj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6dP-O0-SW9" secondAttribute="trailing" id="BJB-iR-aKa"/>
+                <constraint firstItem="M5g-kl-fdw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="Hh3-YU-syG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VDX-cZ-Kmg" secondAttribute="trailing" constant="20" id="LRv-w3-NUg"/>
+                <constraint firstItem="VDX-cZ-Kmg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="bNf-Tm-NkV"/>
+                <constraint firstItem="6dP-O0-SW9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="fDF-9q-Wbl"/>
+                <constraint firstItem="M5g-kl-fdw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="g3B-8x-q4D"/>
+                <constraint firstItem="VDX-cZ-Kmg" firstAttribute="top" secondItem="6dP-O0-SW9" secondAttribute="bottom" constant="50" id="hEt-Ao-7Be"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="weixuanzhong" width="79" height="44"/>
+        <image name="xuanzhong" width="79" height="44"/>
+    </resources>
+</document>

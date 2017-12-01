@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LYQOpinionViewController">
+            <connections>
+                <outlet property="TextView" destination="VTu-iO-H6A" id="o1P-vs-kIN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CmH-2b-jza">
+                    <rect key="frame" x="15" y="40" width="345" height="218"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VTu-iO-H6A">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="218"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="VTu-iO-H6A" secondAttribute="bottom" id="DtR-pk-aRi"/>
+                        <constraint firstAttribute="trailing" secondItem="VTu-iO-H6A" secondAttribute="trailing" id="LEo-cc-jhD"/>
+                        <constraint firstItem="VTu-iO-H6A" firstAttribute="leading" secondItem="CmH-2b-jza" secondAttribute="leading" id="OZ3-3e-V0C"/>
+                        <constraint firstItem="VTu-iO-H6A" firstAttribute="top" secondItem="CmH-2b-jza" secondAttribute="top" id="SBc-Du-8BL"/>
+                        <constraint firstAttribute="height" constant="218" id="sEI-4M-vku"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h59-Te-tyq">
+                    <rect key="frame" x="15" y="363" width="345" height="41"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="5IL-ak-PLP"/>
+                    </constraints>
+                    <state key="normal" title="提交意见">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tijiaoyijianCLick:" destination="-1" eventType="touchUpInside" id="YwU-Tv-O6n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="CmH-2b-jza" secondAttribute="trailing" constant="15" id="DXq-PO-p8h"/>
+                <constraint firstItem="h59-Te-tyq" firstAttribute="top" secondItem="CmH-2b-jza" secondAttribute="bottom" constant="105" id="MbV-Tm-aje"/>
+                <constraint firstItem="h59-Te-tyq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="OXK-mR-83M"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="h59-Te-tyq" secondAttribute="trailing" constant="15" id="iP8-ti-ar5"/>
+                <constraint firstItem="CmH-2b-jza" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="vQf-Eo-wcd"/>
+                <constraint firstItem="CmH-2b-jza" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="vn6-xl-jGb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-150" y="-13"/>
+        </view>
+    </objects>
+</document>

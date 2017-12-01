@@ -1,0 +1,19 @@
+platform :ios, '8.0' #手机的系统
+target 'quanzhouda' do
+pod 'AFNetworking'
+pod 'AMap3DMap'  #3D地图SDK
+pod 'AMapSearch' #搜索功能
+pod 'AMapLocation' #定位
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+pod 'mob_sharesdk'
+pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+pod 'BATextView'
+pod 'Qiniu'
+
+end
+
+

@@ -1,0 +1,1858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15091F721FCFFD95001E407A /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15091F6F1FCFFD94001E407A /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15091F731FCFFD95001E407A /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15091F701FCFFD95001E407A /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15091F741FCFFD95001E407A /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15091F711FCFFD95001E407A /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15091F771FD00C4D001E407A /* LYQPushPlaceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15091F761FD00C4D001E407A /* LYQPushPlaceRequest.m */; };
+		15091F7C1FD00D53001E407A /* LYQPushPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15091F7B1FD00D53001E407A /* LYQPushPlaceModel.m */; };
+		151B50191FC7DD0C009F1F2D /* LYQUploadImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B50181FC7DD0C009F1F2D /* LYQUploadImageTool.m */; };
+		151CEA4A1FCF94C00025136C /* LYQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA381FCF94C00025136C /* LYQUser.m */; };
+		151CEA4B1FCF94C00025136C /* LYQHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEA3A1FCF94C00025136C /* LYQHUD.xib */; };
+		151CEA4C1FCF94C00025136C /* LYQHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA3B1FCF94C00025136C /* LYQHUD.m */; };
+		151CEA4D1FCF94C00025136C /* LYQHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA3E1FCF94C00025136C /* LYQHudView.m */; };
+		151CEA4E1FCF94C00025136C /* LYQUserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA421FCF94C00025136C /* LYQUserTool.m */; };
+		151CEA6F1FCF959A0025136C /* LYQSecuriTyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEA521FCF959A0025136C /* LYQSecuriTyViewController.xib */; };
+		151CEA701FCF959A0025136C /* LYQOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA531FCF959A0025136C /* LYQOpinionViewController.m */; };
+		151CEA711FCF959A0025136C /* LYQOpinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEA541FCF959A0025136C /* LYQOpinionViewController.xib */; };
+		151CEA721FCF959A0025136C /* LYQSecuriTyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA571FCF959A0025136C /* LYQSecuriTyViewController.m */; };
+		151CEA731FCF959A0025136C /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA581FCF959A0025136C /* MeViewController.m */; };
+		151CEA741FCF959A0025136C /* LYQSetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA5A1FCF959A0025136C /* LYQSetUpViewController.m */; };
+		151CEA761FCF959A0025136C /* LYQMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA601FCF959A0025136C /* LYQMeModel.m */; };
+		151CEA781FCF959A0025136C /* LYQSureAndCancleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA661FCF959A0025136C /* LYQSureAndCancleView.m */; };
+		151CEA791FCF959A0025136C /* LYQMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA681FCF959A0025136C /* LYQMeCell.m */; };
+		151CEA7A1FCF959A0025136C /* LYQMeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEA6A1FCF959A0025136C /* LYQMeHeaderView.xib */; };
+		151CEA7B1FCF959A0025136C /* LYQMeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA6B1FCF959A0025136C /* LYQMeHeaderView.m */; };
+		151CEA7F1FCF96270025136C /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA7D1FCF96260025136C /* ZXPUnicode.m */; };
+		151CEA921FCF963C0025136C /* UIBarButtonItem+LYQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA841FCF963C0025136C /* UIBarButtonItem+LYQItem.m */; };
+		151CEA931FCF963C0025136C /* SVProgressHUD+LYQHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA851FCF963C0025136C /* SVProgressHUD+LYQHUD.m */; };
+		151CEA941FCF963C0025136C /* NSString+LYQCheckStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA861FCF963C0025136C /* NSString+LYQCheckStr.m */; };
+		151CEA951FCF963C0025136C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA871FCF963C0025136C /* UIView+Frame.m */; };
+		151CEA961FCF963C0025136C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA881FCF963C0025136C /* UIImage+GIF.m */; };
+		151CEA971FCF963C0025136C /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA891FCF963C0025136C /* UITextField+Placeholder.m */; };
+		151CEA981FCF963C0025136C /* UIColor+LYQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA8A1FCF963C0025136C /* UIColor+LYQColor.m */; };
+		151CEAC61FCF970C0025136C /* LYQPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA9C1FCF970C0025136C /* LYQPushController.m */; };
+		151CEAC71FCF970C0025136C /* LYQPushController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEA9D1FCF970C0025136C /* LYQPushController.xib */; };
+		151CEAC81FCF970C0025136C /* LYQCerCarOwnerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA9E1FCF970C0025136C /* LYQCerCarOwnerController.m */; };
+		151CEAC91FCF970C0025136C /* LYQShowUserMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEA9F1FCF970C0025136C /* LYQShowUserMapController.m */; };
+		151CEACA1FCF970C0025136C /* LYQCerCarOwnerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAA11FCF970C0025136C /* LYQCerCarOwnerController.xib */; };
+		151CEACB1FCF970C0025136C /* LYQGoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAA41FCF970C0025136C /* LYQGoController.xib */; };
+		151CEACC1FCF970C0025136C /* LYQGoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAA71FCF970C0025136C /* LYQGoController.m */; };
+		151CEACD1FCF970C0025136C /* LYQShunCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAA81FCF970C0025136C /* LYQShunCarViewController.m */; };
+		151CEACE1FCF970C0025136C /* LYQAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAAB1FCF970C0025136C /* LYQAddressCell.xib */; };
+		151CEACF1FCF970C0025136C /* LYQAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAAC1FCF970C0025136C /* LYQAddressCell.m */; };
+		151CEAD01FCF970C0025136C /* LYQAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAAE1FCF970C0025136C /* LYQAddressModel.m */; };
+		151CEAD11FCF970C0025136C /* LYQMyAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAAF1FCF970C0025136C /* LYQMyAddress.m */; };
+		151CEAD21FCF970C0025136C /* LYQAddressSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAB01FCF970C0025136C /* LYQAddressSaveTool.m */; };
+		151CEAD31FCF970C0025136C /* LYQLocaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAB11FCF970C0025136C /* LYQLocaModel.m */; };
+		151CEAD41FCF970C0025136C /* LYQContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAB81FCF970C0025136C /* LYQContentView.xib */; };
+		151CEAD51FCF970C0025136C /* LYQContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAB91FCF970C0025136C /* LYQContentView.m */; };
+		151CEAD61FCF970C0025136C /* LYQTopVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEABA1FCF970C0025136C /* LYQTopVIew.m */; };
+		151CEAD71FCF970C0025136C /* LYQShangCheView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEABB1FCF970C0025136C /* LYQShangCheView.m */; };
+		151CEAD81FCF970C0025136C /* LYQContentRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEABD1FCF970C0025136C /* LYQContentRightView.m */; };
+		151CEAD91FCF970C0025136C /* LYQContentRightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEABE1FCF970C0025136C /* LYQContentRightView.xib */; };
+		151CEADA1FCF970C0025136C /* LYQChoseCarZhaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEABF1FCF970C0025136C /* LYQChoseCarZhaoView.m */; };
+		151CEAFE1FCF97880025136C /* LYQShunDaiWuTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAE01FCF97880025136C /* LYQShunDaiWuTypeController.xib */; };
+		151CEAFF1FCF97880025136C /* LYQShunDaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAE11FCF97880025136C /* LYQShunDaiViewController.m */; };
+		151CEB001FCF97880025136C /* LYQShunDaiWuTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAE21FCF97880025136C /* LYQShunDaiWuTypeController.m */; };
+		151CEB011FCF97880025136C /* LYQTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAE61FCF97880025136C /* LYQTimeTool.m */; };
+		151CEB021FCF97880025136C /* LYQShuiDaiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAE71FCF97880025136C /* LYQShuiDaiModel.m */; };
+		151CEB031FCF97880025136C /* LYQShuiDaiViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAE81FCF97880025136C /* LYQShuiDaiViewModel.m */; };
+		151CEB041FCF97880025136C /* LYQChoseTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAEE1FCF97880025136C /* LYQChoseTimeView.xib */; };
+		151CEB051FCF97880025136C /* LYQChoseTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAEF1FCF97880025136C /* LYQChoseTimeView.m */; };
+		151CEB061FCF97880025136C /* LYQShuiDaiRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAF11FCF97880025136C /* LYQShuiDaiRightCell.xib */; };
+		151CEB071FCF97880025136C /* LYQShuiDaiFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAF21FCF97880025136C /* LYQShuiDaiFooterView.xib */; };
+		151CEB081FCF97880025136C /* LYQShuiDaiRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAF31FCF97880025136C /* LYQShuiDaiRightCell.m */; };
+		151CEB091FCF97880025136C /* LYQShuDaiTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAF51FCF97880025136C /* LYQShuDaiTopView.m */; };
+		151CEB0A1FCF97880025136C /* LYQShuDaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAF61FCF97880025136C /* LYQShuDaiCell.m */; };
+		151CEB0B1FCF97880025136C /* LYQShuDaiTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAF71FCF97880025136C /* LYQShuDaiTopView.xib */; };
+		151CEB0C1FCF97880025136C /* LYQShuiDaiFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEAF81FCF97880025136C /* LYQShuiDaiFooterView.m */; };
+		151CEB0D1FCF97880025136C /* LYQShuDaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CEAF91FCF97880025136C /* LYQShuDaiCell.xib */; };
+		151CEB181FCF981D0025136C /* LYQBuypeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEB121FCF981D0025136C /* LYQBuypeiViewController.m */; };
+		151CEB2A1FCF98560025136C /* LYQTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEB1E1FCF98560025136C /* LYQTabbarController.m */; };
+		151CEB2B1FCF98560025136C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEB1F1FCF98560025136C /* main.m */; };
+		151CEB2C1FCF98560025136C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEB201FCF98560025136C /* AppDelegate.m */; };
+		151CEB2D1FCF98560025136C /* LYQNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEB221FCF98560025136C /* LYQNavController.m */; };
+		151CEB2E1FCF98560025136C /* LYQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CEB261FCF98560025136C /* LYQTabBar.m */; };
+		151D7CED1FCF9D9F00BB1953 /* LYQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7CEC1FCF9D9F00BB1953 /* LYQBaseViewController.m */; };
+		151D7CF01FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7CEF1FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.m */; };
+		151D7CF51FCF9EA200BB1953 /* LYQLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7CF21FCF9EA200BB1953 /* LYQLoginController.m */; };
+		151D7CF61FCF9EA200BB1953 /* LYQLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151D7CF31FCF9EA200BB1953 /* LYQLoginController.xib */; };
+		151D7CFE1FCF9EEC00BB1953 /* LYQLoginRegController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151D7CF91FCF9EEC00BB1953 /* LYQLoginRegController.xib */; };
+		151D7CFF1FCF9EEC00BB1953 /* LYQLoginRegController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7CFA1FCF9EEC00BB1953 /* LYQLoginRegController.m */; };
+		151D7D001FCF9EEC00BB1953 /* LYQRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7CFC1FCF9EEC00BB1953 /* LYQRegViewController.m */; };
+		151D7D031FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D021FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.m */; };
+		151D7D061FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D051FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.m */; };
+		151D7D0A1FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D091FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.m */; };
+		151D7D0D1FCFA64500BB1953 /* LYQRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D0C1FCFA64500BB1953 /* LYQRequestTool.m */; };
+		151D7D101FCFAA4700BB1953 /* LYQLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D0F1FCFAA4700BB1953 /* LYQLoginModel.m */; };
+		151D7D131FCFAA5800BB1953 /* LYQCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D121FCFAA5800BB1953 /* LYQCodeModel.m */; };
+		151D7D161FCFAA6600BB1953 /* LYQRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D151FCFAA6600BB1953 /* LYQRegisterModel.m */; };
+		151D7D191FCFAAA800BB1953 /* LYQLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D181FCFAAA800BB1953 /* LYQLoginParam.m */; };
+		151D7D1C1FCFAAB700BB1953 /* LYQRegisterParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D1B1FCFAAB700BB1953 /* LYQRegisterParam.m */; };
+		151D7D1F1FCFAAC400BB1953 /* LYQCodeParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D1E1FCFAAC400BB1953 /* LYQCodeParam.m */; };
+		151D7D221FCFAF6500BB1953 /* LYQChoseWindowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D211FCFAF6500BB1953 /* LYQChoseWindowTool.m */; };
+		151D7D251FCFB61900BB1953 /* LYQUserLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D241FCFB61900BB1953 /* LYQUserLocationTool.m */; };
+		151D7D281FCFB65400BB1953 /* LYQUserLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D271FCFB65400BB1953 /* LYQUserLocationModel.m */; };
+		151D7D2B1FCFE9C000BB1953 /* LYQPushPlaceParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D2A1FCFE9C000BB1953 /* LYQPushPlaceParam.m */; };
+		151D7D2E1FCFF43400BB1953 /* LYQFreeRideBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D2D1FCFF43400BB1953 /* LYQFreeRideBaseParam.m */; };
+		151D7D311FCFF47800BB1953 /* LYQFreeRideBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D7D301FCFF47800BB1953 /* LYQFreeRideBaseVC.m */; };
+		15247C371FBD7CBD0020C7E2 /* huancun.gif in Resources */ = {isa = PBXBuildFile; fileRef = 15247C361FBD7CBD0020C7E2 /* huancun.gif */; };
+		157702AF1FD0E9F500AD7787 /* LYQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 157702AE1FD0E9F500AD7787 /* LYQButton.m */; };
+		157702B21FD0EA0B00AD7787 /* LYQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 157702B11FD0EA0B00AD7787 /* LYQLabel.m */; };
+		157702B51FD0EA1F00AD7787 /* LYQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 157702B41FD0EA1F00AD7787 /* LYQImage.m */; };
+		157702B81FD0EA2F00AD7787 /* LYQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157702B71FD0EA2F00AD7787 /* LYQTableViewCell.m */; };
+		15EE75451FBAAF9100048E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15EE75441FBAAF9100048E6D /* Assets.xcassets */; };
+		15EE75551FBAAF9200048E6D /* quanzhoudaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE75541FBAAF9200048E6D /* quanzhoudaTests.m */; };
+		15EE75601FBAAF9200048E6D /* quanzhoudaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE755F1FBAAF9200048E6D /* quanzhoudaUITests.m */; };
+		15EE75931FBAB22B00048E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15EE75921FBAB22B00048E6D /* Images.xcassets */; };
+		15F475801FD104BB00500B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F4757F1FD104BB00500B84 /* LaunchScreen.storyboard */; };
+		E2AEDF151A678F9749011C61 /* libPods-quanzhouda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7848C6F9675A78E0B1F9878 /* libPods-quanzhouda.a */; settings = {ATTRIBUTES = (Required, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15EE75511FBAAF9200048E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15EE75301FBAAF9100048E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15EE75371FBAAF9100048E6D;
+			remoteInfo = quanzhouda;
+		};
+		15EE755C1FBAAF9200048E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15EE75301FBAAF9100048E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15EE75371FBAAF9100048E6D;
+			remoteInfo = quanzhouda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		151B50251FC7FD04009F1F2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				15091F721FCFFD95001E407A /* IdcardQuality.framework in Embed Frameworks */,
+				15091F731FCFFD95001E407A /* AipOcrSdk.framework in Embed Frameworks */,
+				15091F741FCFFD95001E407A /* AipBase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15091F6F1FCFFD94001E407A /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
+		15091F701FCFFD95001E407A /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
+		15091F711FCFFD95001E407A /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		15091F751FD00C4D001E407A /* LYQPushPlaceRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQPushPlaceRequest.h; sourceTree = "<group>"; };
+		15091F761FD00C4D001E407A /* LYQPushPlaceRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQPushPlaceRequest.m; sourceTree = "<group>"; };
+		15091F7A1FD00D53001E407A /* LYQPushPlaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQPushPlaceModel.h; sourceTree = "<group>"; };
+		15091F7B1FD00D53001E407A /* LYQPushPlaceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQPushPlaceModel.m; sourceTree = "<group>"; };
+		151B50171FC7DD0C009F1F2D /* LYQUploadImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQUploadImageTool.h; sourceTree = "<group>"; };
+		151B50181FC7DD0C009F1F2D /* LYQUploadImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQUploadImageTool.m; sourceTree = "<group>"; };
+		151CEA361FCF94C00025136C /* LYQUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQUser.h; sourceTree = "<group>"; };
+		151CEA381FCF94C00025136C /* LYQUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQUser.m; sourceTree = "<group>"; };
+		151CEA3A1FCF94C00025136C /* LYQHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQHUD.xib; sourceTree = "<group>"; };
+		151CEA3B1FCF94C00025136C /* LYQHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQHUD.m; sourceTree = "<group>"; };
+		151CEA3C1FCF94C00025136C /* LYQHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQHudView.h; sourceTree = "<group>"; };
+		151CEA3D1FCF94C00025136C /* LYQHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQHUD.h; sourceTree = "<group>"; };
+		151CEA3E1FCF94C00025136C /* LYQHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQHudView.m; sourceTree = "<group>"; };
+		151CEA421FCF94C00025136C /* LYQUserTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQUserTool.m; sourceTree = "<group>"; };
+		151CEA431FCF94C00025136C /* LYQUserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQUserTool.h; sourceTree = "<group>"; };
+		151CEA521FCF959A0025136C /* LYQSecuriTyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQSecuriTyViewController.xib; sourceTree = "<group>"; };
+		151CEA531FCF959A0025136C /* LYQOpinionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQOpinionViewController.m; sourceTree = "<group>"; };
+		151CEA541FCF959A0025136C /* LYQOpinionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQOpinionViewController.xib; sourceTree = "<group>"; };
+		151CEA551FCF959A0025136C /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		151CEA561FCF959A0025136C /* LYQSetUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQSetUpViewController.h; sourceTree = "<group>"; };
+		151CEA571FCF959A0025136C /* LYQSecuriTyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQSecuriTyViewController.m; sourceTree = "<group>"; };
+		151CEA581FCF959A0025136C /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		151CEA591FCF959A0025136C /* LYQOpinionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQOpinionViewController.h; sourceTree = "<group>"; };
+		151CEA5A1FCF959A0025136C /* LYQSetUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQSetUpViewController.m; sourceTree = "<group>"; };
+		151CEA5B1FCF959A0025136C /* LYQSecuriTyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQSecuriTyViewController.h; sourceTree = "<group>"; };
+		151CEA601FCF959A0025136C /* LYQMeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQMeModel.m; sourceTree = "<group>"; };
+		151CEA621FCF959A0025136C /* LYQMeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQMeModel.h; sourceTree = "<group>"; };
+		151CEA651FCF959A0025136C /* LYQMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQMeCell.h; sourceTree = "<group>"; };
+		151CEA661FCF959A0025136C /* LYQSureAndCancleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQSureAndCancleView.m; sourceTree = "<group>"; };
+		151CEA671FCF959A0025136C /* LYQMeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQMeHeaderView.h; sourceTree = "<group>"; };
+		151CEA681FCF959A0025136C /* LYQMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQMeCell.m; sourceTree = "<group>"; };
+		151CEA691FCF959A0025136C /* LYQSureAndCancleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQSureAndCancleView.h; sourceTree = "<group>"; };
+		151CEA6A1FCF959A0025136C /* LYQMeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQMeHeaderView.xib; sourceTree = "<group>"; };
+		151CEA6B1FCF959A0025136C /* LYQMeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQMeHeaderView.m; sourceTree = "<group>"; };
+		151CEA7D1FCF96260025136C /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
+		151CEA7E1FCF96270025136C /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
+		151CEA841FCF963C0025136C /* UIBarButtonItem+LYQItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LYQItem.m"; sourceTree = "<group>"; };
+		151CEA851FCF963C0025136C /* SVProgressHUD+LYQHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+LYQHUD.m"; sourceTree = "<group>"; };
+		151CEA861FCF963C0025136C /* NSString+LYQCheckStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYQCheckStr.m"; sourceTree = "<group>"; };
+		151CEA871FCF963C0025136C /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		151CEA881FCF963C0025136C /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		151CEA891FCF963C0025136C /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
+		151CEA8A1FCF963C0025136C /* UIColor+LYQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LYQColor.m"; sourceTree = "<group>"; };
+		151CEA8B1FCF963C0025136C /* NSString+LYQCheckStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYQCheckStr.h"; sourceTree = "<group>"; };
+		151CEA8C1FCF963C0025136C /* SVProgressHUD+LYQHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+LYQHUD.h"; sourceTree = "<group>"; };
+		151CEA8D1FCF963C0025136C /* UIBarButtonItem+LYQItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LYQItem.h"; sourceTree = "<group>"; };
+		151CEA8E1FCF963C0025136C /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		151CEA8F1FCF963C0025136C /* UIColor+LYQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LYQColor.h"; sourceTree = "<group>"; };
+		151CEA901FCF963C0025136C /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		151CEA911FCF963C0025136C /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		151CEA9C1FCF970C0025136C /* LYQPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQPushController.m; sourceTree = "<group>"; };
+		151CEA9D1FCF970C0025136C /* LYQPushController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQPushController.xib; sourceTree = "<group>"; };
+		151CEA9E1FCF970C0025136C /* LYQCerCarOwnerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQCerCarOwnerController.m; sourceTree = "<group>"; };
+		151CEA9F1FCF970C0025136C /* LYQShowUserMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShowUserMapController.m; sourceTree = "<group>"; };
+		151CEAA01FCF970C0025136C /* LYQShunCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShunCarViewController.h; sourceTree = "<group>"; };
+		151CEAA11FCF970C0025136C /* LYQCerCarOwnerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQCerCarOwnerController.xib; sourceTree = "<group>"; };
+		151CEAA21FCF970C0025136C /* LYQGoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQGoController.h; sourceTree = "<group>"; };
+		151CEAA31FCF970C0025136C /* LYQPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQPushController.h; sourceTree = "<group>"; };
+		151CEAA41FCF970C0025136C /* LYQGoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQGoController.xib; sourceTree = "<group>"; };
+		151CEAA51FCF970C0025136C /* LYQShowUserMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShowUserMapController.h; sourceTree = "<group>"; };
+		151CEAA61FCF970C0025136C /* LYQCerCarOwnerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQCerCarOwnerController.h; sourceTree = "<group>"; };
+		151CEAA71FCF970C0025136C /* LYQGoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQGoController.m; sourceTree = "<group>"; };
+		151CEAA81FCF970C0025136C /* LYQShunCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShunCarViewController.m; sourceTree = "<group>"; };
+		151CEAAA1FCF970C0025136C /* LYQAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQAddressCell.h; sourceTree = "<group>"; };
+		151CEAAB1FCF970C0025136C /* LYQAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQAddressCell.xib; sourceTree = "<group>"; };
+		151CEAAC1FCF970C0025136C /* LYQAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQAddressCell.m; sourceTree = "<group>"; };
+		151CEAAE1FCF970C0025136C /* LYQAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQAddressModel.m; sourceTree = "<group>"; };
+		151CEAAF1FCF970C0025136C /* LYQMyAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQMyAddress.m; sourceTree = "<group>"; };
+		151CEAB01FCF970C0025136C /* LYQAddressSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQAddressSaveTool.m; sourceTree = "<group>"; };
+		151CEAB11FCF970C0025136C /* LYQLocaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQLocaModel.m; sourceTree = "<group>"; };
+		151CEAB21FCF970C0025136C /* LYQMyAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQMyAddress.h; sourceTree = "<group>"; };
+		151CEAB31FCF970C0025136C /* LYQAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQAddressModel.h; sourceTree = "<group>"; };
+		151CEAB41FCF970C0025136C /* LYQAddressSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQAddressSaveTool.h; sourceTree = "<group>"; };
+		151CEAB51FCF970C0025136C /* LYQLocaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQLocaModel.h; sourceTree = "<group>"; };
+		151CEAB71FCF970C0025136C /* LYQContentRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQContentRightView.h; sourceTree = "<group>"; };
+		151CEAB81FCF970C0025136C /* LYQContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQContentView.xib; sourceTree = "<group>"; };
+		151CEAB91FCF970C0025136C /* LYQContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQContentView.m; sourceTree = "<group>"; };
+		151CEABA1FCF970C0025136C /* LYQTopVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTopVIew.m; sourceTree = "<group>"; };
+		151CEABB1FCF970C0025136C /* LYQShangCheView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShangCheView.m; sourceTree = "<group>"; };
+		151CEABC1FCF970C0025136C /* LYQChoseCarZhaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQChoseCarZhaoView.h; sourceTree = "<group>"; };
+		151CEABD1FCF970C0025136C /* LYQContentRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQContentRightView.m; sourceTree = "<group>"; };
+		151CEABE1FCF970C0025136C /* LYQContentRightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQContentRightView.xib; sourceTree = "<group>"; };
+		151CEABF1FCF970C0025136C /* LYQChoseCarZhaoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQChoseCarZhaoView.m; sourceTree = "<group>"; };
+		151CEAC01FCF970C0025136C /* LYQShangCheView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShangCheView.h; sourceTree = "<group>"; };
+		151CEAC11FCF970C0025136C /* LYQTopVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTopVIew.h; sourceTree = "<group>"; };
+		151CEAC21FCF970C0025136C /* LYQContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQContentView.h; sourceTree = "<group>"; };
+		151CEADE1FCF97880025136C /* LYQShunDaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShunDaiViewController.h; sourceTree = "<group>"; };
+		151CEADF1FCF97880025136C /* LYQShunDaiWuTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShunDaiWuTypeController.h; sourceTree = "<group>"; };
+		151CEAE01FCF97880025136C /* LYQShunDaiWuTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQShunDaiWuTypeController.xib; sourceTree = "<group>"; };
+		151CEAE11FCF97880025136C /* LYQShunDaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShunDaiViewController.m; sourceTree = "<group>"; };
+		151CEAE21FCF97880025136C /* LYQShunDaiWuTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShunDaiWuTypeController.m; sourceTree = "<group>"; };
+		151CEAE51FCF97880025136C /* LYQShuiDaiViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShuiDaiViewModel.h; sourceTree = "<group>"; };
+		151CEAE61FCF97880025136C /* LYQTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTimeTool.m; sourceTree = "<group>"; };
+		151CEAE71FCF97880025136C /* LYQShuiDaiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShuiDaiModel.m; sourceTree = "<group>"; };
+		151CEAE81FCF97880025136C /* LYQShuiDaiViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShuiDaiViewModel.m; sourceTree = "<group>"; };
+		151CEAE91FCF97880025136C /* LYQShuiDaiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShuiDaiModel.h; sourceTree = "<group>"; };
+		151CEAEA1FCF97880025136C /* LYQTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTimeTool.h; sourceTree = "<group>"; };
+		151CEAEC1FCF97880025136C /* LYQShuDaiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShuDaiCell.h; sourceTree = "<group>"; };
+		151CEAED1FCF97880025136C /* LYQShuDaiTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShuDaiTopView.h; sourceTree = "<group>"; };
+		151CEAEE1FCF97880025136C /* LYQChoseTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQChoseTimeView.xib; sourceTree = "<group>"; };
+		151CEAEF1FCF97880025136C /* LYQChoseTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQChoseTimeView.m; sourceTree = "<group>"; };
+		151CEAF01FCF97880025136C /* LYQShuiDaiFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShuiDaiFooterView.h; sourceTree = "<group>"; };
+		151CEAF11FCF97880025136C /* LYQShuiDaiRightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQShuiDaiRightCell.xib; sourceTree = "<group>"; };
+		151CEAF21FCF97880025136C /* LYQShuiDaiFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQShuiDaiFooterView.xib; sourceTree = "<group>"; };
+		151CEAF31FCF97880025136C /* LYQShuiDaiRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShuiDaiRightCell.m; sourceTree = "<group>"; };
+		151CEAF41FCF97880025136C /* LYQChoseTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQChoseTimeView.h; sourceTree = "<group>"; };
+		151CEAF51FCF97880025136C /* LYQShuDaiTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShuDaiTopView.m; sourceTree = "<group>"; };
+		151CEAF61FCF97880025136C /* LYQShuDaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShuDaiCell.m; sourceTree = "<group>"; };
+		151CEAF71FCF97880025136C /* LYQShuDaiTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQShuDaiTopView.xib; sourceTree = "<group>"; };
+		151CEAF81FCF97880025136C /* LYQShuiDaiFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShuiDaiFooterView.m; sourceTree = "<group>"; };
+		151CEAF91FCF97880025136C /* LYQShuDaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQShuDaiCell.xib; sourceTree = "<group>"; };
+		151CEAFA1FCF97880025136C /* LYQShuiDaiRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShuiDaiRightCell.h; sourceTree = "<group>"; };
+		151CEB111FCF981D0025136C /* LYQBuypeiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQBuypeiViewController.h; sourceTree = "<group>"; };
+		151CEB121FCF981D0025136C /* LYQBuypeiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQBuypeiViewController.m; sourceTree = "<group>"; };
+		151CEB1C1FCF98560025136C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		151CEB1D1FCF98560025136C /* LYQNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQNavController.h; sourceTree = "<group>"; };
+		151CEB1E1FCF98560025136C /* LYQTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTabbarController.m; sourceTree = "<group>"; };
+		151CEB1F1FCF98560025136C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		151CEB201FCF98560025136C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		151CEB211FCF98560025136C /* LYQTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTabbarController.h; sourceTree = "<group>"; };
+		151CEB221FCF98560025136C /* LYQNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQNavController.m; sourceTree = "<group>"; };
+		151CEB261FCF98560025136C /* LYQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTabBar.m; sourceTree = "<group>"; };
+		151CEB271FCF98560025136C /* LYQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTabBar.h; sourceTree = "<group>"; };
+		151D7CEB1FCF9D9F00BB1953 /* LYQBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQBaseViewController.h; sourceTree = "<group>"; };
+		151D7CEC1FCF9D9F00BB1953 /* LYQBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQBaseViewController.m; sourceTree = "<group>"; };
+		151D7CEE1FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQBaseLoginAndRegisterVC.h; sourceTree = "<group>"; };
+		151D7CEF1FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQBaseLoginAndRegisterVC.m; sourceTree = "<group>"; };
+		151D7CF21FCF9EA200BB1953 /* LYQLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQLoginController.m; sourceTree = "<group>"; };
+		151D7CF31FCF9EA200BB1953 /* LYQLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQLoginController.xib; sourceTree = "<group>"; };
+		151D7CF41FCF9EA200BB1953 /* LYQLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQLoginController.h; sourceTree = "<group>"; };
+		151D7CF81FCF9EEC00BB1953 /* LYQLoginRegController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQLoginRegController.h; sourceTree = "<group>"; };
+		151D7CF91FCF9EEC00BB1953 /* LYQLoginRegController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQLoginRegController.xib; sourceTree = "<group>"; };
+		151D7CFA1FCF9EEC00BB1953 /* LYQLoginRegController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQLoginRegController.m; sourceTree = "<group>"; };
+		151D7CFC1FCF9EEC00BB1953 /* LYQRegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRegViewController.m; sourceTree = "<group>"; };
+		151D7CFD1FCF9EEC00BB1953 /* LYQRegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRegViewController.h; sourceTree = "<group>"; };
+		151D7D011FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQLoginAndRegisterRequest.h; sourceTree = "<group>"; };
+		151D7D021FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQLoginAndRegisterRequest.m; sourceTree = "<group>"; };
+		151D7D041FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQLoginAndRegistBaseParam.h; sourceTree = "<group>"; };
+		151D7D051FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQLoginAndRegistBaseParam.m; sourceTree = "<group>"; };
+		151D7D081FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQLoginAndRegistBaseModel.h; sourceTree = "<group>"; };
+		151D7D091FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQLoginAndRegistBaseModel.m; sourceTree = "<group>"; };
+		151D7D0B1FCFA64500BB1953 /* LYQRequestTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQRequestTool.h; sourceTree = "<group>"; };
+		151D7D0C1FCFA64500BB1953 /* LYQRequestTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQRequestTool.m; sourceTree = "<group>"; };
+		151D7D0E1FCFAA4700BB1953 /* LYQLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQLoginModel.h; sourceTree = "<group>"; };
+		151D7D0F1FCFAA4700BB1953 /* LYQLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQLoginModel.m; sourceTree = "<group>"; };
+		151D7D111FCFAA5800BB1953 /* LYQCodeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQCodeModel.h; sourceTree = "<group>"; };
+		151D7D121FCFAA5800BB1953 /* LYQCodeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQCodeModel.m; sourceTree = "<group>"; };
+		151D7D141FCFAA6600BB1953 /* LYQRegisterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQRegisterModel.h; sourceTree = "<group>"; };
+		151D7D151FCFAA6600BB1953 /* LYQRegisterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQRegisterModel.m; sourceTree = "<group>"; };
+		151D7D171FCFAAA800BB1953 /* LYQLoginParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQLoginParam.h; sourceTree = "<group>"; };
+		151D7D181FCFAAA800BB1953 /* LYQLoginParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQLoginParam.m; sourceTree = "<group>"; };
+		151D7D1A1FCFAAB700BB1953 /* LYQRegisterParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQRegisterParam.h; sourceTree = "<group>"; };
+		151D7D1B1FCFAAB700BB1953 /* LYQRegisterParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQRegisterParam.m; sourceTree = "<group>"; };
+		151D7D1D1FCFAAC400BB1953 /* LYQCodeParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQCodeParam.h; sourceTree = "<group>"; };
+		151D7D1E1FCFAAC400BB1953 /* LYQCodeParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQCodeParam.m; sourceTree = "<group>"; };
+		151D7D201FCFAF6500BB1953 /* LYQChoseWindowTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQChoseWindowTool.h; sourceTree = "<group>"; };
+		151D7D211FCFAF6500BB1953 /* LYQChoseWindowTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQChoseWindowTool.m; sourceTree = "<group>"; };
+		151D7D231FCFB61900BB1953 /* LYQUserLocationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQUserLocationTool.h; sourceTree = "<group>"; };
+		151D7D241FCFB61900BB1953 /* LYQUserLocationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQUserLocationTool.m; sourceTree = "<group>"; };
+		151D7D261FCFB65400BB1953 /* LYQUserLocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQUserLocationModel.h; sourceTree = "<group>"; };
+		151D7D271FCFB65400BB1953 /* LYQUserLocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQUserLocationModel.m; sourceTree = "<group>"; };
+		151D7D291FCFE9C000BB1953 /* LYQPushPlaceParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQPushPlaceParam.h; sourceTree = "<group>"; };
+		151D7D2A1FCFE9C000BB1953 /* LYQPushPlaceParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQPushPlaceParam.m; sourceTree = "<group>"; };
+		151D7D2C1FCFF43400BB1953 /* LYQFreeRideBaseParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQFreeRideBaseParam.h; sourceTree = "<group>"; };
+		151D7D2D1FCFF43400BB1953 /* LYQFreeRideBaseParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQFreeRideBaseParam.m; sourceTree = "<group>"; };
+		151D7D2F1FCFF47800BB1953 /* LYQFreeRideBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQFreeRideBaseVC.h; sourceTree = "<group>"; };
+		151D7D301FCFF47800BB1953 /* LYQFreeRideBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQFreeRideBaseVC.m; sourceTree = "<group>"; };
+		151EE9121FC2876300FA6299 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		15247C361FBD7CBD0020C7E2 /* huancun.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = huancun.gif; sourceTree = "<group>"; };
+		157702AD1FD0E9F500AD7787 /* LYQButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQButton.h; sourceTree = "<group>"; };
+		157702AE1FD0E9F500AD7787 /* LYQButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQButton.m; sourceTree = "<group>"; };
+		157702B01FD0EA0B00AD7787 /* LYQLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQLabel.h; sourceTree = "<group>"; };
+		157702B11FD0EA0B00AD7787 /* LYQLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQLabel.m; sourceTree = "<group>"; };
+		157702B31FD0EA1F00AD7787 /* LYQImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQImage.h; sourceTree = "<group>"; };
+		157702B41FD0EA1F00AD7787 /* LYQImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQImage.m; sourceTree = "<group>"; };
+		157702B61FD0EA2F00AD7787 /* LYQTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYQTableViewCell.h; sourceTree = "<group>"; };
+		157702B71FD0EA2F00AD7787 /* LYQTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYQTableViewCell.m; sourceTree = "<group>"; };
+		15EE75381FBAAF9100048E6D /* quanzhouda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quanzhouda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EE75441FBAAF9100048E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15EE75491FBAAF9100048E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15EE75501FBAAF9200048E6D /* quanzhoudaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quanzhoudaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EE75541FBAAF9200048E6D /* quanzhoudaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quanzhoudaTests.m; sourceTree = "<group>"; };
+		15EE75561FBAAF9200048E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15EE755B1FBAAF9200048E6D /* quanzhoudaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quanzhoudaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EE755F1FBAAF9200048E6D /* quanzhoudaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quanzhoudaUITests.m; sourceTree = "<group>"; };
+		15EE75611FBAAF9200048E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15EE75921FBAB22B00048E6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15F4757F1FD104BB00500B84 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D285484569071671398A7A9B /* Pods-quanzhouda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanzhouda.release.xcconfig"; path = "Pods/Target Support Files/Pods-quanzhouda/Pods-quanzhouda.release.xcconfig"; sourceTree = "<group>"; };
+		D95E168251CB2E08D88463F7 /* Pods-quanzhouda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanzhouda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quanzhouda/Pods-quanzhouda.debug.xcconfig"; sourceTree = "<group>"; };
+		E7848C6F9675A78E0B1F9878 /* libPods-quanzhouda.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quanzhouda.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15EE75351FBAAF9100048E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AEDF151A678F9749011C61 /* libPods-quanzhouda.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EE754D1FBAAF9200048E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EE75581FBAAF9200048E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15091F791FD00D3F001E407A /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				15091F7A1FD00D53001E407A /* LYQPushPlaceModel.h */,
+				15091F7B1FD00D53001E407A /* LYQPushPlaceModel.m */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		151CEA291FCF94C00025136C /* LoginAndRegister(登录注册) */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D071FCFA3D800BB1953 /* BaseModel */,
+				151D7CD81FCF9BB400BB1953 /* BaseParam */,
+				151D7CD61FCF9BB300BB1953 /* BaseVC */,
+				151D7CD71FCF9BB400BB1953 /* BaseView */,
+				151CEA7C1FCF95A40025136C /* cell */,
+				151CEA2A1FCF94C00025136C /* param */,
+				151CEA2B1FCF94C00025136C /* controller */,
+				151CEA341FCF94C00025136C /* model */,
+				151CEA391FCF94C00025136C /* view */,
+				151CEA3F1FCF94C00025136C /* api */,
+				151CEA401FCF94C00025136C /* request */,
+				151CEA411FCF94C00025136C /* tool */,
+			);
+			path = "LoginAndRegister(登录注册)";
+			sourceTree = "<group>";
+		};
+		151CEA2A1FCF94C00025136C /* param */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D171FCFAAA800BB1953 /* LYQLoginParam.h */,
+				151D7D181FCFAAA800BB1953 /* LYQLoginParam.m */,
+				151D7D1A1FCFAAB700BB1953 /* LYQRegisterParam.h */,
+				151D7D1B1FCFAAB700BB1953 /* LYQRegisterParam.m */,
+				151D7D1D1FCFAAC400BB1953 /* LYQCodeParam.h */,
+				151D7D1E1FCFAAC400BB1953 /* LYQCodeParam.m */,
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		151CEA2B1FCF94C00025136C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CF71FCF9EEC00BB1953 /* LoginAndRegister */,
+				151D7CFB1FCF9EEC00BB1953 /* Register */,
+				151D7CF11FCF9EA200BB1953 /* Login */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		151CEA341FCF94C00025136C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA381FCF94C00025136C /* LYQUser.m */,
+				151CEA361FCF94C00025136C /* LYQUser.h */,
+				151D7D0E1FCFAA4700BB1953 /* LYQLoginModel.h */,
+				151D7D0F1FCFAA4700BB1953 /* LYQLoginModel.m */,
+				151D7D111FCFAA5800BB1953 /* LYQCodeModel.h */,
+				151D7D121FCFAA5800BB1953 /* LYQCodeModel.m */,
+				151D7D141FCFAA6600BB1953 /* LYQRegisterModel.h */,
+				151D7D151FCFAA6600BB1953 /* LYQRegisterModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151CEA391FCF94C00025136C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA3A1FCF94C00025136C /* LYQHUD.xib */,
+				151CEA3B1FCF94C00025136C /* LYQHUD.m */,
+				151CEA3D1FCF94C00025136C /* LYQHUD.h */,
+				151CEA3E1FCF94C00025136C /* LYQHudView.m */,
+				151CEA3C1FCF94C00025136C /* LYQHudView.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		151CEA3F1FCF94C00025136C /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		151CEA401FCF94C00025136C /* request */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D011FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.h */,
+				151D7D021FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.m */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		151CEA411FCF94C00025136C /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA421FCF94C00025136C /* LYQUserTool.m */,
+				151CEA431FCF94C00025136C /* LYQUserTool.h */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		151CEA4F1FCF959A0025136C /* PersonalCenter(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CDC1FCF9BE100BB1953 /* BaseParam */,
+				151D7CDD1FCF9BE100BB1953 /* BaseVC */,
+				151D7CDE1FCF9BE100BB1953 /* BaseView */,
+				151CEA501FCF959A0025136C /* param */,
+				151CEA511FCF959A0025136C /* controller */,
+				151CEA5C1FCF959A0025136C /* cell */,
+				151CEA5D1FCF959A0025136C /* model */,
+				151CEA641FCF959A0025136C /* View */,
+				151CEA6C1FCF959A0025136C /* api */,
+				151CEA6D1FCF959A0025136C /* request */,
+				151CEA6E1FCF959A0025136C /* tool */,
+			);
+			path = "PersonalCenter(个人中心)";
+			sourceTree = "<group>";
+		};
+		151CEA501FCF959A0025136C /* param */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		151CEA511FCF959A0025136C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA521FCF959A0025136C /* LYQSecuriTyViewController.xib */,
+				151CEA531FCF959A0025136C /* LYQOpinionViewController.m */,
+				151CEA541FCF959A0025136C /* LYQOpinionViewController.xib */,
+				151CEA551FCF959A0025136C /* MeViewController.h */,
+				151CEA561FCF959A0025136C /* LYQSetUpViewController.h */,
+				151CEA571FCF959A0025136C /* LYQSecuriTyViewController.m */,
+				151CEA581FCF959A0025136C /* MeViewController.m */,
+				151CEA591FCF959A0025136C /* LYQOpinionViewController.h */,
+				151CEA5A1FCF959A0025136C /* LYQSetUpViewController.m */,
+				151CEA5B1FCF959A0025136C /* LYQSecuriTyViewController.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		151CEA5C1FCF959A0025136C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		151CEA5D1FCF959A0025136C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA601FCF959A0025136C /* LYQMeModel.m */,
+				151CEA621FCF959A0025136C /* LYQMeModel.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151CEA641FCF959A0025136C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA651FCF959A0025136C /* LYQMeCell.h */,
+				151CEA661FCF959A0025136C /* LYQSureAndCancleView.m */,
+				151CEA671FCF959A0025136C /* LYQMeHeaderView.h */,
+				151CEA681FCF959A0025136C /* LYQMeCell.m */,
+				151CEA691FCF959A0025136C /* LYQSureAndCancleView.h */,
+				151CEA6A1FCF959A0025136C /* LYQMeHeaderView.xib */,
+				151CEA6B1FCF959A0025136C /* LYQMeHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		151CEA6C1FCF959A0025136C /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		151CEA6D1FCF959A0025136C /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		151CEA6E1FCF959A0025136C /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		151CEA7C1FCF95A40025136C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		151CEA831FCF963C0025136C /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA841FCF963C0025136C /* UIBarButtonItem+LYQItem.m */,
+				151CEA851FCF963C0025136C /* SVProgressHUD+LYQHUD.m */,
+				151CEA861FCF963C0025136C /* NSString+LYQCheckStr.m */,
+				151CEA871FCF963C0025136C /* UIView+Frame.m */,
+				151CEA881FCF963C0025136C /* UIImage+GIF.m */,
+				151CEA891FCF963C0025136C /* UITextField+Placeholder.m */,
+				151CEA8A1FCF963C0025136C /* UIColor+LYQColor.m */,
+				151CEA8B1FCF963C0025136C /* NSString+LYQCheckStr.h */,
+				151CEA8C1FCF963C0025136C /* SVProgressHUD+LYQHUD.h */,
+				151CEA8D1FCF963C0025136C /* UIBarButtonItem+LYQItem.h */,
+				151CEA8E1FCF963C0025136C /* UIView+Frame.h */,
+				151CEA8F1FCF963C0025136C /* UIColor+LYQColor.h */,
+				151CEA901FCF963C0025136C /* UITextField+Placeholder.h */,
+				151CEA911FCF963C0025136C /* UIImage+GIF.h */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		151CEA991FCF970C0025136C /* FreeRide(顺分车) */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CE01FCF9BF400BB1953 /* BaseParam */,
+				151D7CE11FCF9BF400BB1953 /* BaseVC */,
+				151D7CDF1FCF9BF400BB1953 /* BaseView */,
+				151CEA9A1FCF970C0025136C /* param */,
+				151CEA9B1FCF970C0025136C /* controller */,
+				151CEAA91FCF970C0025136C /* cell */,
+				151CEAAD1FCF970C0025136C /* model */,
+				151CEAB61FCF970C0025136C /* view */,
+				151CEAC31FCF970C0025136C /* api */,
+				151CEAC41FCF970C0025136C /* request */,
+				151CEAC51FCF970C0025136C /* tool */,
+			);
+			path = "FreeRide(顺分车)";
+			sourceTree = "<group>";
+		};
+		151CEA9A1FCF970C0025136C /* param */ = {
+			isa = PBXGroup;
+			children = (
+				15091F791FD00D3F001E407A /* RequestModel */,
+				151D7D291FCFE9C000BB1953 /* LYQPushPlaceParam.h */,
+				151D7D2A1FCFE9C000BB1953 /* LYQPushPlaceParam.m */,
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		151CEA9B1FCF970C0025136C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				151CEAA31FCF970C0025136C /* LYQPushController.h */,
+				151CEA9C1FCF970C0025136C /* LYQPushController.m */,
+				151CEA9D1FCF970C0025136C /* LYQPushController.xib */,
+				151CEAA61FCF970C0025136C /* LYQCerCarOwnerController.h */,
+				151CEA9E1FCF970C0025136C /* LYQCerCarOwnerController.m */,
+				151CEAA11FCF970C0025136C /* LYQCerCarOwnerController.xib */,
+				151CEAA21FCF970C0025136C /* LYQGoController.h */,
+				151CEAA71FCF970C0025136C /* LYQGoController.m */,
+				151CEAA41FCF970C0025136C /* LYQGoController.xib */,
+				151CEA9F1FCF970C0025136C /* LYQShowUserMapController.m */,
+				151CEAA51FCF970C0025136C /* LYQShowUserMapController.h */,
+				151CEAA01FCF970C0025136C /* LYQShunCarViewController.h */,
+				151CEAA81FCF970C0025136C /* LYQShunCarViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		151CEAA91FCF970C0025136C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				151CEAAB1FCF970C0025136C /* LYQAddressCell.xib */,
+				151CEAAC1FCF970C0025136C /* LYQAddressCell.m */,
+				151CEAAA1FCF970C0025136C /* LYQAddressCell.h */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		151CEAAD1FCF970C0025136C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				151CEAAF1FCF970C0025136C /* LYQMyAddress.m */,
+				151CEAB01FCF970C0025136C /* LYQAddressSaveTool.m */,
+				151CEAB11FCF970C0025136C /* LYQLocaModel.m */,
+				151CEAB21FCF970C0025136C /* LYQMyAddress.h */,
+				151CEAAE1FCF970C0025136C /* LYQAddressModel.m */,
+				151CEAB31FCF970C0025136C /* LYQAddressModel.h */,
+				151CEAB41FCF970C0025136C /* LYQAddressSaveTool.h */,
+				151CEAB51FCF970C0025136C /* LYQLocaModel.h */,
+				151D7D261FCFB65400BB1953 /* LYQUserLocationModel.h */,
+				151D7D271FCFB65400BB1953 /* LYQUserLocationModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151CEAB61FCF970C0025136C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				151CEAC21FCF970C0025136C /* LYQContentView.h */,
+				151CEAB91FCF970C0025136C /* LYQContentView.m */,
+				151CEAB81FCF970C0025136C /* LYQContentView.xib */,
+				151CEAC11FCF970C0025136C /* LYQTopVIew.h */,
+				151CEABA1FCF970C0025136C /* LYQTopVIew.m */,
+				151CEAC01FCF970C0025136C /* LYQShangCheView.h */,
+				151CEABB1FCF970C0025136C /* LYQShangCheView.m */,
+				151CEABC1FCF970C0025136C /* LYQChoseCarZhaoView.h */,
+				151CEABF1FCF970C0025136C /* LYQChoseCarZhaoView.m */,
+				151CEAB71FCF970C0025136C /* LYQContentRightView.h */,
+				151CEABD1FCF970C0025136C /* LYQContentRightView.m */,
+				151CEABE1FCF970C0025136C /* LYQContentRightView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		151CEAC31FCF970C0025136C /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		151CEAC41FCF970C0025136C /* request */ = {
+			isa = PBXGroup;
+			children = (
+				15091F751FD00C4D001E407A /* LYQPushPlaceRequest.h */,
+				15091F761FD00C4D001E407A /* LYQPushPlaceRequest.m */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		151CEAC51FCF970C0025136C /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D231FCFB61900BB1953 /* LYQUserLocationTool.h */,
+				151D7D241FCFB61900BB1953 /* LYQUserLocationTool.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		151CEADB1FCF97880025136C /* FreeTakeAway(顺分带) */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CE31FCF9C0800BB1953 /* BaseParam */,
+				151D7CE21FCF9C0800BB1953 /* BaseVC */,
+				151D7CE41FCF9C0800BB1953 /* BaseView */,
+				151CEADC1FCF97880025136C /* param */,
+				151CEADD1FCF97880025136C /* controller */,
+				151CEAE31FCF97880025136C /* cell */,
+				151CEAE41FCF97880025136C /* model */,
+				151CEAEB1FCF97880025136C /* view */,
+				151CEAFB1FCF97880025136C /* api */,
+				151CEAFC1FCF97880025136C /* request */,
+				151CEAFD1FCF97880025136C /* tool */,
+			);
+			path = "FreeTakeAway(顺分带)";
+			sourceTree = "<group>";
+		};
+		151CEADC1FCF97880025136C /* param */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		151CEADD1FCF97880025136C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				151CEADE1FCF97880025136C /* LYQShunDaiViewController.h */,
+				151CEADF1FCF97880025136C /* LYQShunDaiWuTypeController.h */,
+				151CEAE01FCF97880025136C /* LYQShunDaiWuTypeController.xib */,
+				151CEAE11FCF97880025136C /* LYQShunDaiViewController.m */,
+				151CEAE21FCF97880025136C /* LYQShunDaiWuTypeController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		151CEAE31FCF97880025136C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		151CEAE41FCF97880025136C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				151CEAE51FCF97880025136C /* LYQShuiDaiViewModel.h */,
+				151CEAE61FCF97880025136C /* LYQTimeTool.m */,
+				151CEAE71FCF97880025136C /* LYQShuiDaiModel.m */,
+				151CEAE81FCF97880025136C /* LYQShuiDaiViewModel.m */,
+				151CEAE91FCF97880025136C /* LYQShuiDaiModel.h */,
+				151CEAEA1FCF97880025136C /* LYQTimeTool.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151CEAEB1FCF97880025136C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				151CEAEC1FCF97880025136C /* LYQShuDaiCell.h */,
+				151CEAED1FCF97880025136C /* LYQShuDaiTopView.h */,
+				151CEAEE1FCF97880025136C /* LYQChoseTimeView.xib */,
+				151CEAEF1FCF97880025136C /* LYQChoseTimeView.m */,
+				151CEAF01FCF97880025136C /* LYQShuiDaiFooterView.h */,
+				151CEAF11FCF97880025136C /* LYQShuiDaiRightCell.xib */,
+				151CEAF21FCF97880025136C /* LYQShuiDaiFooterView.xib */,
+				151CEAF31FCF97880025136C /* LYQShuiDaiRightCell.m */,
+				151CEAF41FCF97880025136C /* LYQChoseTimeView.h */,
+				151CEAF51FCF97880025136C /* LYQShuDaiTopView.m */,
+				151CEAF61FCF97880025136C /* LYQShuDaiCell.m */,
+				151CEAF71FCF97880025136C /* LYQShuDaiTopView.xib */,
+				151CEAF81FCF97880025136C /* LYQShuiDaiFooterView.m */,
+				151CEAF91FCF97880025136C /* LYQShuDaiCell.xib */,
+				151CEAFA1FCF97880025136C /* LYQShuiDaiRightCell.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		151CEAFB1FCF97880025136C /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		151CEAFC1FCF97880025136C /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		151CEAFD1FCF97880025136C /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		151CEB0E1FCF981D0025136C /* BuyParts(买配件) */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CE61FCF9C1E00BB1953 /* BaseParam */,
+				151D7CE71FCF9C1E00BB1953 /* BaseVC */,
+				151D7CE51FCF9C1E00BB1953 /* BaseView */,
+				151CEB0F1FCF981D0025136C /* param */,
+				151CEB101FCF981D0025136C /* controller */,
+				151CEB131FCF981D0025136C /* cell */,
+				151CEB141FCF981D0025136C /* model */,
+				151CEB151FCF981D0025136C /* view */,
+				151CEB161FCF981D0025136C /* request */,
+				151CEB171FCF981D0025136C /* tool */,
+			);
+			path = "BuyParts(买配件)";
+			sourceTree = "<group>";
+		};
+		151CEB0F1FCF981D0025136C /* param */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		151CEB101FCF981D0025136C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				151CEB111FCF981D0025136C /* LYQBuypeiViewController.h */,
+				151CEB121FCF981D0025136C /* LYQBuypeiViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		151CEB131FCF981D0025136C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		151CEB141FCF981D0025136C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151CEB151FCF981D0025136C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		151CEB161FCF981D0025136C /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		151CEB171FCF981D0025136C /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		151CEB191FCF98560025136C /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CE81FCF9C2D00BB1953 /* BaseParam */,
+				151D7CEA1FCF9C2D00BB1953 /* BaseVC */,
+				151D7CE91FCF9C2D00BB1953 /* BaseView */,
+				151D7CCF1FCF98EB00BB1953 /* pch */,
+				151CEB1A1FCF98560025136C /* param */,
+				151CEB1B1FCF98560025136C /* controller */,
+				151CEB231FCF98560025136C /* cell */,
+				151CEB241FCF98560025136C /* model */,
+				151CEB251FCF98560025136C /* view */,
+				151CEB281FCF98560025136C /* request */,
+				151CEB291FCF98560025136C /* tool */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		151CEB1A1FCF98560025136C /* param */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		151CEB1B1FCF98560025136C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				151CEB211FCF98560025136C /* LYQTabbarController.h */,
+				151CEB1E1FCF98560025136C /* LYQTabbarController.m */,
+				151CEB1C1FCF98560025136C /* AppDelegate.h */,
+				151CEB201FCF98560025136C /* AppDelegate.m */,
+				151CEB1D1FCF98560025136C /* LYQNavController.h */,
+				151CEB221FCF98560025136C /* LYQNavController.m */,
+				151CEB1F1FCF98560025136C /* main.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		151CEB231FCF98560025136C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		151CEB241FCF98560025136C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		151CEB251FCF98560025136C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				151CEB261FCF98560025136C /* LYQTabBar.m */,
+				151CEB271FCF98560025136C /* LYQTabBar.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		151CEB281FCF98560025136C /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		151CEB291FCF98560025136C /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D201FCFAF6500BB1953 /* LYQChoseWindowTool.h */,
+				151D7D211FCFAF6500BB1953 /* LYQChoseWindowTool.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		151D7CCF1FCF98EB00BB1953 /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				151EE9121FC2876300FA6299 /* PrefixHeader.pch */,
+			);
+			path = pch;
+			sourceTree = "<group>";
+		};
+		151D7CD61FCF9BB300BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CEE1FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.h */,
+				151D7CEF1FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CD71FCF9BB400BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CD81FCF9BB400BB1953 /* BaseParam */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D041FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.h */,
+				151D7D051FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.m */,
+			);
+			path = BaseParam;
+			sourceTree = "<group>";
+		};
+		151D7CDA1FCF9BCE00BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CEB1FCF9D9F00BB1953 /* LYQBaseViewController.h */,
+				151D7CEC1FCF9D9F00BB1953 /* LYQBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CDB1FCF9BCE00BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				157702AD1FD0E9F500AD7787 /* LYQButton.h */,
+				157702AE1FD0E9F500AD7787 /* LYQButton.m */,
+				157702B01FD0EA0B00AD7787 /* LYQLabel.h */,
+				157702B11FD0EA0B00AD7787 /* LYQLabel.m */,
+				157702B31FD0EA1F00AD7787 /* LYQImage.h */,
+				157702B41FD0EA1F00AD7787 /* LYQImage.m */,
+				157702B61FD0EA2F00AD7787 /* LYQTableViewCell.h */,
+				157702B71FD0EA2F00AD7787 /* LYQTableViewCell.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CDC1FCF9BE100BB1953 /* BaseParam */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseParam;
+			sourceTree = "<group>";
+		};
+		151D7CDD1FCF9BE100BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CDE1FCF9BE100BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CDF1FCF9BF400BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CE01FCF9BF400BB1953 /* BaseParam */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D2C1FCFF43400BB1953 /* LYQFreeRideBaseParam.h */,
+				151D7D2D1FCFF43400BB1953 /* LYQFreeRideBaseParam.m */,
+			);
+			path = BaseParam;
+			sourceTree = "<group>";
+		};
+		151D7CE11FCF9BF400BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D2F1FCFF47800BB1953 /* LYQFreeRideBaseVC.h */,
+				151D7D301FCFF47800BB1953 /* LYQFreeRideBaseVC.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CE21FCF9C0800BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CE31FCF9C0800BB1953 /* BaseParam */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseParam;
+			sourceTree = "<group>";
+		};
+		151D7CE41FCF9C0800BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CE51FCF9C1E00BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CE61FCF9C1E00BB1953 /* BaseParam */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseParam;
+			sourceTree = "<group>";
+		};
+		151D7CE71FCF9C1E00BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CE81FCF9C2D00BB1953 /* BaseParam */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseParam;
+			sourceTree = "<group>";
+		};
+		151D7CE91FCF9C2D00BB1953 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		151D7CEA1FCF9C2D00BB1953 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		151D7CF11FCF9EA200BB1953 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CF21FCF9EA200BB1953 /* LYQLoginController.m */,
+				151D7CF41FCF9EA200BB1953 /* LYQLoginController.h */,
+				151D7CF31FCF9EA200BB1953 /* LYQLoginController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		151D7CF71FCF9EEC00BB1953 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CF81FCF9EEC00BB1953 /* LYQLoginRegController.h */,
+				151D7CFA1FCF9EEC00BB1953 /* LYQLoginRegController.m */,
+				151D7CF91FCF9EEC00BB1953 /* LYQLoginRegController.xib */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		151D7CFB1FCF9EEC00BB1953 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CFD1FCF9EEC00BB1953 /* LYQRegViewController.h */,
+				151D7CFC1FCF9EEC00BB1953 /* LYQRegViewController.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		151D7D071FCFA3D800BB1953 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				151D7D081FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.h */,
+				151D7D091FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		151D9F691FBBEAEE0051418B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				151CEA7E1FCF96270025136C /* ZXPUnicode.h */,
+				151CEA7D1FCF96260025136C /* ZXPUnicode.m */,
+				151B50171FC7DD0C009F1F2D /* LYQUploadImageTool.h */,
+				151B50181FC7DD0C009F1F2D /* LYQUploadImageTool.m */,
+				151D7D0B1FCFA64500BB1953 /* LYQRequestTool.h */,
+				151D7D0C1FCFA64500BB1953 /* LYQRequestTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		15EE752F1FBAAF9100048E6D = {
+			isa = PBXGroup;
+			children = (
+				15091F711FCFFD95001E407A /* AipBase.framework */,
+				15091F701FCFFD95001E407A /* AipOcrSdk.framework */,
+				15091F6F1FCFFD94001E407A /* IdcardQuality.framework */,
+				15EE753A1FBAAF9100048E6D /* quanzhouda */,
+				15EE75531FBAAF9200048E6D /* quanzhoudaTests */,
+				15EE755E1FBAAF9200048E6D /* quanzhoudaUITests */,
+				15EE75391FBAAF9100048E6D /* Products */,
+				15EE75981FBABD7800048E6D /* Frameworks */,
+				2237BC9729DE28899D1F183A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		15EE75391FBAAF9100048E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15EE75381FBAAF9100048E6D /* quanzhouda.app */,
+				15EE75501FBAAF9200048E6D /* quanzhoudaTests.xctest */,
+				15EE755B1FBAAF9200048E6D /* quanzhoudaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15EE753A1FBAAF9100048E6D /* quanzhouda */ = {
+			isa = PBXGroup;
+			children = (
+				15EE756D1FBAB05D00048E6D /* Classes */,
+				15EE75441FBAAF9100048E6D /* Assets.xcassets */,
+				15247C361FBD7CBD0020C7E2 /* huancun.gif */,
+				15EE75491FBAAF9100048E6D /* Info.plist */,
+				15EE75921FBAB22B00048E6D /* Images.xcassets */,
+				15F4757F1FD104BB00500B84 /* LaunchScreen.storyboard */,
+			);
+			path = quanzhouda;
+			sourceTree = "<group>";
+		};
+		15EE75531FBAAF9200048E6D /* quanzhoudaTests */ = {
+			isa = PBXGroup;
+			children = (
+				15EE75541FBAAF9200048E6D /* quanzhoudaTests.m */,
+				15EE75561FBAAF9200048E6D /* Info.plist */,
+			);
+			path = quanzhoudaTests;
+			sourceTree = "<group>";
+		};
+		15EE755E1FBAAF9200048E6D /* quanzhoudaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15EE755F1FBAAF9200048E6D /* quanzhoudaUITests.m */,
+				15EE75611FBAAF9200048E6D /* Info.plist */,
+			);
+			path = quanzhoudaUITests;
+			sourceTree = "<group>";
+		};
+		15EE756D1FBAB05D00048E6D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				151D7CDA1FCF9BCE00BB1953 /* BaseVC */,
+				151D7CDB1FCF9BCE00BB1953 /* BaseView */,
+				151CEB191FCF98560025136C /* Main(主要) */,
+				151CEB0E1FCF981D0025136C /* BuyParts(买配件) */,
+				151CEADB1FCF97880025136C /* FreeTakeAway(顺分带) */,
+				151CEA991FCF970C0025136C /* FreeRide(顺分车) */,
+				151CEA831FCF963C0025136C /* Category(分类) */,
+				151CEA4F1FCF959A0025136C /* PersonalCenter(个人中心) */,
+				151CEA291FCF94C00025136C /* LoginAndRegister(登录注册) */,
+				151D9F691FBBEAEE0051418B /* Tool */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		15EE75981FBABD7800048E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7848C6F9675A78E0B1F9878 /* libPods-quanzhouda.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2237BC9729DE28899D1F183A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D95E168251CB2E08D88463F7 /* Pods-quanzhouda.debug.xcconfig */,
+				D285484569071671398A7A9B /* Pods-quanzhouda.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15EE75371FBAAF9100048E6D /* quanzhouda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EE75641FBAAF9200048E6D /* Build configuration list for PBXNativeTarget "quanzhouda" */;
+			buildPhases = (
+				0F581DD9451C4243BFA2647A /* [CP] Check Pods Manifest.lock */,
+				15EE75341FBAAF9100048E6D /* Sources */,
+				15EE75351FBAAF9100048E6D /* Frameworks */,
+				15EE75361FBAAF9100048E6D /* Resources */,
+				356283BD7C1DC80A07DB5369 /* [CP] Embed Pods Frameworks */,
+				D1AEB668EBC20A09A3AFF92A /* [CP] Copy Pods Resources */,
+				151B50251FC7FD04009F1F2D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quanzhouda;
+			productName = quanzhouda;
+			productReference = 15EE75381FBAAF9100048E6D /* quanzhouda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15EE754F1FBAAF9200048E6D /* quanzhoudaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EE75671FBAAF9200048E6D /* Build configuration list for PBXNativeTarget "quanzhoudaTests" */;
+			buildPhases = (
+				15EE754C1FBAAF9200048E6D /* Sources */,
+				15EE754D1FBAAF9200048E6D /* Frameworks */,
+				15EE754E1FBAAF9200048E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15EE75521FBAAF9200048E6D /* PBXTargetDependency */,
+			);
+			name = quanzhoudaTests;
+			productName = quanzhoudaTests;
+			productReference = 15EE75501FBAAF9200048E6D /* quanzhoudaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15EE755A1FBAAF9200048E6D /* quanzhoudaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EE756A1FBAAF9200048E6D /* Build configuration list for PBXNativeTarget "quanzhoudaUITests" */;
+			buildPhases = (
+				15EE75571FBAAF9200048E6D /* Sources */,
+				15EE75581FBAAF9200048E6D /* Frameworks */,
+				15EE75591FBAAF9200048E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15EE755D1FBAAF9200048E6D /* PBXTargetDependency */,
+			);
+			name = quanzhoudaUITests;
+			productName = quanzhoudaUITests;
+			productReference = 15EE755B1FBAAF9200048E6D /* quanzhoudaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15EE75301FBAAF9100048E6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LYQ;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = pro;
+				TargetAttributes = {
+					15EE75371FBAAF9100048E6D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					15EE754F1FBAAF9200048E6D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 15EE75371FBAAF9100048E6D;
+					};
+					15EE755A1FBAAF9200048E6D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 15EE75371FBAAF9100048E6D;
+					};
+				};
+			};
+			buildConfigurationList = 15EE75331FBAAF9100048E6D /* Build configuration list for PBXProject "quanzhouda" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15EE752F1FBAAF9100048E6D;
+			productRefGroup = 15EE75391FBAAF9100048E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15EE75371FBAAF9100048E6D /* quanzhouda */,
+				15EE754F1FBAAF9200048E6D /* quanzhoudaTests */,
+				15EE755A1FBAAF9200048E6D /* quanzhoudaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15EE75361FBAAF9100048E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15247C371FBD7CBD0020C7E2 /* huancun.gif in Resources */,
+				151CEA7A1FCF959A0025136C /* LYQMeHeaderView.xib in Resources */,
+				151CEB071FCF97880025136C /* LYQShuiDaiFooterView.xib in Resources */,
+				151CEB061FCF97880025136C /* LYQShuiDaiRightCell.xib in Resources */,
+				151CEB0D1FCF97880025136C /* LYQShuDaiCell.xib in Resources */,
+				151CEACA1FCF970C0025136C /* LYQCerCarOwnerController.xib in Resources */,
+				151CEAC71FCF970C0025136C /* LYQPushController.xib in Resources */,
+				151CEA711FCF959A0025136C /* LYQOpinionViewController.xib in Resources */,
+				151CEAD41FCF970C0025136C /* LYQContentView.xib in Resources */,
+				15F475801FD104BB00500B84 /* LaunchScreen.storyboard in Resources */,
+				151CEAD91FCF970C0025136C /* LYQContentRightView.xib in Resources */,
+				151CEA4B1FCF94C00025136C /* LYQHUD.xib in Resources */,
+				151CEACB1FCF970C0025136C /* LYQGoController.xib in Resources */,
+				15EE75451FBAAF9100048E6D /* Assets.xcassets in Resources */,
+				151D7CFE1FCF9EEC00BB1953 /* LYQLoginRegController.xib in Resources */,
+				151CEB0B1FCF97880025136C /* LYQShuDaiTopView.xib in Resources */,
+				151CEB041FCF97880025136C /* LYQChoseTimeView.xib in Resources */,
+				151CEAFE1FCF97880025136C /* LYQShunDaiWuTypeController.xib in Resources */,
+				15EE75931FBAB22B00048E6D /* Images.xcassets in Resources */,
+				151CEA6F1FCF959A0025136C /* LYQSecuriTyViewController.xib in Resources */,
+				151CEACE1FCF970C0025136C /* LYQAddressCell.xib in Resources */,
+				151D7CF61FCF9EA200BB1953 /* LYQLoginController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EE754E1FBAAF9200048E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EE75591FBAAF9200048E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F581DD9451C4243BFA2647A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanzhouda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		356283BD7C1DC80A07DB5369 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quanzhouda/Pods-quanzhouda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1AEB668EBC20A09A3AFF92A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-quanzhouda/Pods-quanzhouda-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/Required/ShareSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quanzhouda/Pods-quanzhouda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15EE75341FBAAF9100048E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151CEA921FCF963C0025136C /* UIBarButtonItem+LYQItem.m in Sources */,
+				151D7D0A1FCFA3F800BB1953 /* LYQLoginAndRegistBaseModel.m in Sources */,
+				151D7D101FCFAA4700BB1953 /* LYQLoginModel.m in Sources */,
+				151CEA4D1FCF94C00025136C /* LYQHudView.m in Sources */,
+				151CEA931FCF963C0025136C /* SVProgressHUD+LYQHUD.m in Sources */,
+				151D7D001FCF9EEC00BB1953 /* LYQRegViewController.m in Sources */,
+				151CEADA1FCF970C0025136C /* LYQChoseCarZhaoView.m in Sources */,
+				151CEA4A1FCF94C00025136C /* LYQUser.m in Sources */,
+				151CEA781FCF959A0025136C /* LYQSureAndCancleView.m in Sources */,
+				151CEACD1FCF970C0025136C /* LYQShunCarViewController.m in Sources */,
+				151D7D2E1FCFF43400BB1953 /* LYQFreeRideBaseParam.m in Sources */,
+				151CEAC91FCF970C0025136C /* LYQShowUserMapController.m in Sources */,
+				151CEB051FCF97880025136C /* LYQChoseTimeView.m in Sources */,
+				151CEA721FCF959A0025136C /* LYQSecuriTyViewController.m in Sources */,
+				151CEA701FCF959A0025136C /* LYQOpinionViewController.m in Sources */,
+				151CEAD61FCF970C0025136C /* LYQTopVIew.m in Sources */,
+				151CEAD21FCF970C0025136C /* LYQAddressSaveTool.m in Sources */,
+				151CEB2C1FCF98560025136C /* AppDelegate.m in Sources */,
+				151D7D061FCFA36600BB1953 /* LYQLoginAndRegistBaseParam.m in Sources */,
+				15091F7C1FD00D53001E407A /* LYQPushPlaceModel.m in Sources */,
+				151CEB2A1FCF98560025136C /* LYQTabbarController.m in Sources */,
+				151D7D281FCFB65400BB1953 /* LYQUserLocationModel.m in Sources */,
+				151CEA741FCF959A0025136C /* LYQSetUpViewController.m in Sources */,
+				15091F771FD00C4D001E407A /* LYQPushPlaceRequest.m in Sources */,
+				151CEACC1FCF970C0025136C /* LYQGoController.m in Sources */,
+				151B50191FC7DD0C009F1F2D /* LYQUploadImageTool.m in Sources */,
+				151CEAD51FCF970C0025136C /* LYQContentView.m in Sources */,
+				151D7D1F1FCFAAC400BB1953 /* LYQCodeParam.m in Sources */,
+				157702B21FD0EA0B00AD7787 /* LYQLabel.m in Sources */,
+				151CEB031FCF97880025136C /* LYQShuiDaiViewModel.m in Sources */,
+				151D7D161FCFAA6600BB1953 /* LYQRegisterModel.m in Sources */,
+				151CEAC61FCF970C0025136C /* LYQPushController.m in Sources */,
+				151D7D221FCFAF6500BB1953 /* LYQChoseWindowTool.m in Sources */,
+				151CEB021FCF97880025136C /* LYQShuiDaiModel.m in Sources */,
+				151D7D031FCFA08C00BB1953 /* LYQLoginAndRegisterRequest.m in Sources */,
+				151CEA4C1FCF94C00025136C /* LYQHUD.m in Sources */,
+				151CEA7F1FCF96270025136C /* ZXPUnicode.m in Sources */,
+				157702B81FD0EA2F00AD7787 /* LYQTableViewCell.m in Sources */,
+				151D7CF01FCF9E2E00BB1953 /* LYQBaseLoginAndRegisterVC.m in Sources */,
+				151CEB0C1FCF97880025136C /* LYQShuiDaiFooterView.m in Sources */,
+				151D7D131FCFAA5800BB1953 /* LYQCodeModel.m in Sources */,
+				151CEB081FCF97880025136C /* LYQShuiDaiRightCell.m in Sources */,
+				151CEB2E1FCF98560025136C /* LYQTabBar.m in Sources */,
+				151CEACF1FCF970C0025136C /* LYQAddressCell.m in Sources */,
+				151D7D191FCFAAA800BB1953 /* LYQLoginParam.m in Sources */,
+				151CEA4E1FCF94C00025136C /* LYQUserTool.m in Sources */,
+				151CEB001FCF97880025136C /* LYQShunDaiWuTypeController.m in Sources */,
+				151CEAC81FCF970C0025136C /* LYQCerCarOwnerController.m in Sources */,
+				151CEA941FCF963C0025136C /* NSString+LYQCheckStr.m in Sources */,
+				151CEA981FCF963C0025136C /* UIColor+LYQColor.m in Sources */,
+				151D7D2B1FCFE9C000BB1953 /* LYQPushPlaceParam.m in Sources */,
+				151CEAD01FCF970C0025136C /* LYQAddressModel.m in Sources */,
+				151CEA961FCF963C0025136C /* UIImage+GIF.m in Sources */,
+				151D7D1C1FCFAAB700BB1953 /* LYQRegisterParam.m in Sources */,
+				151CEB2D1FCF98560025136C /* LYQNavController.m in Sources */,
+				151CEAD71FCF970C0025136C /* LYQShangCheView.m in Sources */,
+				151CEB2B1FCF98560025136C /* main.m in Sources */,
+				151CEAD81FCF970C0025136C /* LYQContentRightView.m in Sources */,
+				151CEA7B1FCF959A0025136C /* LYQMeHeaderView.m in Sources */,
+				151CEAD31FCF970C0025136C /* LYQLocaModel.m in Sources */,
+				151D7D0D1FCFA64500BB1953 /* LYQRequestTool.m in Sources */,
+				151CEA731FCF959A0025136C /* MeViewController.m in Sources */,
+				151CEB181FCF981D0025136C /* LYQBuypeiViewController.m in Sources */,
+				151CEA761FCF959A0025136C /* LYQMeModel.m in Sources */,
+				151CEB011FCF97880025136C /* LYQTimeTool.m in Sources */,
+				157702B51FD0EA1F00AD7787 /* LYQImage.m in Sources */,
+				151D7CF51FCF9EA200BB1953 /* LYQLoginController.m in Sources */,
+				157702AF1FD0E9F500AD7787 /* LYQButton.m in Sources */,
+				151CEA951FCF963C0025136C /* UIView+Frame.m in Sources */,
+				151D7CFF1FCF9EEC00BB1953 /* LYQLoginRegController.m in Sources */,
+				151CEAD11FCF970C0025136C /* LYQMyAddress.m in Sources */,
+				151D7CED1FCF9D9F00BB1953 /* LYQBaseViewController.m in Sources */,
+				151CEAFF1FCF97880025136C /* LYQShunDaiViewController.m in Sources */,
+				151D7D311FCFF47800BB1953 /* LYQFreeRideBaseVC.m in Sources */,
+				151CEA971FCF963C0025136C /* UITextField+Placeholder.m in Sources */,
+				151D7D251FCFB61900BB1953 /* LYQUserLocationTool.m in Sources */,
+				151CEA791FCF959A0025136C /* LYQMeCell.m in Sources */,
+				151CEB0A1FCF97880025136C /* LYQShuDaiCell.m in Sources */,
+				151CEB091FCF97880025136C /* LYQShuDaiTopView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EE754C1FBAAF9200048E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EE75551FBAAF9200048E6D /* quanzhoudaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EE75571FBAAF9200048E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EE75601FBAAF9200048E6D /* quanzhoudaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15EE75521FBAAF9200048E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15EE75371FBAAF9100048E6D /* quanzhouda */;
+			targetProxy = 15EE75511FBAAF9200048E6D /* PBXContainerItemProxy */;
+		};
+		15EE755D1FBAAF9200048E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15EE75371FBAAF9100048E6D /* quanzhouda */;
+			targetProxy = 15EE755C1FBAAF9200048E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15EE75621FBAAF9200048E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15EE75631FBAAF9200048E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15EE75651FBAAF9200048E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95E168251CB2E08D88463F7 /* Pods-quanzhouda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5UHMY8XLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(SRCROOT)/Classes/Lib(三方库文件)",
+					"$(PROJECT_DIR)/Classes/Lib(三方库文件)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/pro/Desktop/iosLyq/quanzhouda/Classes/Main(主要)/pch/PrefixHeader.pch";
+				INFOPLIST_FILE = quanzhouda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jincangkeji.cn.quanzhouda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15EE75661FBAAF9200048E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D285484569071671398A7A9B /* Pods-quanzhouda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5UHMY8XLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(SRCROOT)/Classes/Lib(三方库文件)",
+					"$(PROJECT_DIR)/Classes/Lib(三方库文件)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/pro/Desktop/iosLyq/quanzhouda/Classes/Main(主要)/pch/PrefixHeader.pch";
+				INFOPLIST_FILE = quanzhouda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jincangkeji.cn.quanzhouda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15EE75681FBAAF9200048E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5UHMY8XLH;
+				INFOPLIST_FILE = quanzhoudaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jincangkeji.cn.quanzhoudaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quanzhouda.app/quanzhouda";
+			};
+			name = Debug;
+		};
+		15EE75691FBAAF9200048E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5UHMY8XLH;
+				INFOPLIST_FILE = quanzhoudaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jincangkeji.cn.quanzhoudaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quanzhouda.app/quanzhouda";
+			};
+			name = Release;
+		};
+		15EE756B1FBAAF9200048E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5UHMY8XLH;
+				INFOPLIST_FILE = quanzhoudaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jincangkeji.cn.quanzhoudaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quanzhouda;
+			};
+			name = Debug;
+		};
+		15EE756C1FBAAF9200048E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5UHMY8XLH;
+				INFOPLIST_FILE = quanzhoudaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jincangkeji.cn.quanzhoudaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quanzhouda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15EE75331FBAAF9100048E6D /* Build configuration list for PBXProject "quanzhouda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EE75621FBAAF9200048E6D /* Debug */,
+				15EE75631FBAAF9200048E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15EE75641FBAAF9200048E6D /* Build configuration list for PBXNativeTarget "quanzhouda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EE75651FBAAF9200048E6D /* Debug */,
+				15EE75661FBAAF9200048E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15EE75671FBAAF9200048E6D /* Build configuration list for PBXNativeTarget "quanzhoudaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EE75681FBAAF9200048E6D /* Debug */,
+				15EE75691FBAAF9200048E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15EE756A1FBAAF9200048E6D /* Build configuration list for PBXNativeTarget "quanzhoudaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EE756B1FBAAF9200048E6D /* Debug */,
+				15EE756C1FBAAF9200048E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15EE75301FBAAF9100048E6D /* Project object */;
+}

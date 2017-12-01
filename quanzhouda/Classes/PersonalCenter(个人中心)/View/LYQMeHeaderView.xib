@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LYQMeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="246"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-Ty-V1h">
+                    <rect key="frame" x="0.0" y="0.0" width="386" height="246"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgReg" translatesAutoresizingMaskIntoConstraints="NO" id="Ptf-9v-0Gd">
+                            <rect key="frame" x="0.0" y="0.0" width="386" height="246"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ox-NW-JaQ">
+                            <rect key="frame" x="160.5" y="90.5" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="7wn-eq-4SO"/>
+                                <constraint firstAttribute="width" constant="65" id="VAa-JO-Omt"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="btnBG"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="少年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1y-MU-lBW">
+                            <rect key="frame" x="179" y="160.5" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4Ox-NW-JaQ" firstAttribute="centerY" secondItem="Ptf-9v-0Gd" secondAttribute="centerY" id="5GX-Qi-yG5"/>
+                        <constraint firstItem="4Ox-NW-JaQ" firstAttribute="centerX" secondItem="Ptf-9v-0Gd" secondAttribute="centerX" id="82O-SV-XKn"/>
+                        <constraint firstItem="e1y-MU-lBW" firstAttribute="centerX" secondItem="4Ox-NW-JaQ" secondAttribute="centerX" id="DLA-rg-WDZ"/>
+                        <constraint firstItem="Ptf-9v-0Gd" firstAttribute="top" secondItem="Xuy-Ty-V1h" secondAttribute="top" id="f9x-4r-hU3"/>
+                        <constraint firstAttribute="bottom" secondItem="Ptf-9v-0Gd" secondAttribute="bottom" id="fKz-ie-st2"/>
+                        <constraint firstItem="e1y-MU-lBW" firstAttribute="top" secondItem="4Ox-NW-JaQ" secondAttribute="bottom" constant="5" id="lKJ-xL-M2w"/>
+                        <constraint firstAttribute="trailing" secondItem="Ptf-9v-0Gd" secondAttribute="trailing" id="lSF-29-L7c"/>
+                        <constraint firstItem="Ptf-9v-0Gd" firstAttribute="leading" secondItem="Xuy-Ty-V1h" secondAttribute="leading" id="nQT-dB-R0J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Xuy-Ty-V1h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="J3o-QU-LBl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xuy-Ty-V1h" secondAttribute="trailing" id="K0x-MQ-DN2"/>
+                <constraint firstItem="Xuy-Ty-V1h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ljs-4i-pVT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xuy-Ty-V1h" secondAttribute="bottom" id="Ukh-g8-fLF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headerBtn" destination="4Ox-NW-JaQ" id="2ih-6g-gHV"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="-163"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgReg" width="750" height="1334"/>
+        <image name="btnBG" width="568" height="100"/>
+    </resources>
+</document>

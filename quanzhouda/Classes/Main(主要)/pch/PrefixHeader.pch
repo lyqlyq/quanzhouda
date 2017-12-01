@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  quanzhouda
+//
+//  Created by pro on 2017/11/20.
+//  Copyright © 2017年 pro. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <MJExtension.h>
+
+
+#import "UIBarButtonItem+LYQItem.h"
+#import "UIColor+LYQColor.h"
+#import "UIView+Frame.h"
+#import "LYQHudView.h"
+#import "LYQHUD.h"
+#import "LYQRequestTool.h"
+
+
+#define show(str) [LYQHudView showInfo:(str)]
+#define screen_W [UIScreen mainScreen].bounds.size.width
+#define screen_H [UIScreen mainScreen].bounds.size.height
+#define sysFont(font)  [UIFont systemFontOfSize:0+(font)]
+#define alphaColor 0.6f
+#define LYQKeyWindow  [UIApplication sharedApplication].keyWindow
+#define LYQNavMaxY 64
+#define LYQTabBarH 49
+#define imageName(name)  [UIImage imageNamed:(name)]
+
+
+#endif /* PrefixHeader_pch */
